@@ -1,0 +1,21 @@
+{
+    "version": "0.1.0",
+    "configurations": [
+        {
+            "name": "Run Tests",
+            "type": "node",
+            "request": "launch",
+            "cwd": "${workspaceRoot}",
+            "program": "${workspaceRoot}/node_modules/mocha/bin/_mocha",
+            "args": [
+                "--require", "source-map-support/register",
+                "-u", "tdd",
+                "--timeout", "999999",
+                "--colors",
+                "${workspaceRoot}/out/test"
+            ],
+            "sourceMaps": true,
+            "outDir": "${workspaceRoot}/out"
+        }
+    ]
+}
