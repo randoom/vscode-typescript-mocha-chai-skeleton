@@ -1,4 +1,4 @@
-import chai = require('chai');
+import {expect} from 'chai';
 
 import {Index} from '../src/index';
 
@@ -7,7 +7,7 @@ describe("Index Class", () => {
         it("returns 0", () => {
             var index = new Index();
             var result = index.index();
-            chai.expect(result).equals(0);
+            expect(result).equals(0);
         })
     });
 });
