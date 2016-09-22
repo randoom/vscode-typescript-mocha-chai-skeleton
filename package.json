@@ -1,5 +1,5 @@
 {
-  "name": "vscode-typescript-jasmine-skeleton",
+  "name": "vscode-typescript-mocha-chai-skeleton",
   "description": "",
   "version": "0.0.1",
   "author": "Somebody",
@@ -10,7 +10,6 @@
   "dependencies": {},
   "devDependencies": {
     "chai": "^3.5.0",
-    "jasmine": "^2.4.1",
     "mocha": "^3.0.2",
     "source-map-support": "^0.4.0"
   },
