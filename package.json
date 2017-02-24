@@ -7,7 +7,10 @@
   "engines": {
     "node": "*"
   },
-  "dependencies": {},
+  "dependencies": {
+    "@types/chai": "^3.4.35",
+    "@types/mocha": "^2.2.39"
+  },
   "devDependencies": {
     "chai": "^3.5.0",
     "mocha": "^3.2.0",
