@@ -6,16 +6,23 @@
             "type": "node",
             "request": "launch",
             "cwd": "${workspaceRoot}",
-            "program": "${workspaceRoot}/node_modules/mocha/bin/_mocha",
-            "args": [
-                "--require", "source-map-support/register",
-                "-u", "tdd",
-                "--timeout", "999999",
+            "runtimeExecutable": "${workspaceRoot}/node_modules/.bin/mocha",
+            "windows": {
+                "runtimeExecutable": "${workspaceRoot}/node_modules/.bin/mocha.cmd"
+            },
+            "runtimeArgs": [
+                "-u",
+                "tdd",
+                "--timeout",
+                "999999",
                 "--colors",
                 "${workspaceRoot}/out/test"
             ],
-            "sourceMaps": true,
-            "outDir": "${workspaceRoot}/out"
+            "internalConsoleOptions": "openOnSessionStart",
+            "outFiles": [
+                "${workspaceRoot}/out/src/*.js",
+                "${workspaceRoot}/out/test/*.js"
+            ]
         }
     ]
 }
